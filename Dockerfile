@@ -10,8 +10,7 @@ RUN apt update -q; \
         texlive-luatex \
         texlive-lang-german \
         texlive-fonts-extra; \
-    rm -rf /var/lib/apt/lists/*; \
-    luaotfload-tool --update
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /data
 VOLUME ["/data"]
